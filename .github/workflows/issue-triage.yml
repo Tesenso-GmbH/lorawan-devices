@@ -3,6 +3,11 @@ on:
   issues:
     types: [opened]
 
+# Kleinste noetige Rechte fuer GITHUB_TOKEN (CodeQL: actions/missing-workflow-permissions)
+permissions:
+  contents: read
+  issues: write
+
 jobs:
   triage:
     name: Triage New Issues
